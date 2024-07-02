@@ -16,6 +16,6 @@ movies_titles=[movie.getText() for movie in all_movies]
 #list need to be reverse to start from 1
 movies=movies_titles[::-1]
 print(movies)
-with open("movies.txt",mode="w")as file:
+with open("movies.txt",mode="w",encoding="utf-8")as file:
     for movie in movies:
         file.write(f"{movie}\n")
